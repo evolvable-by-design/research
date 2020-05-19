@@ -2,6 +2,8 @@
 
 > Crossover study, a variant of within-subject design inwhich all participants are exposed sequentially to all variances of the task
 
+Example article implementing this method: http://www.jot.fm/issues/issue_2019_02/article10.pdf
+
 ## Objectives
 
 * Compare the effort required, with and without the approach, to develop and maintain a frontend that uses an evolving API -> Unit? Time?
@@ -23,3 +25,8 @@ Minimum Developers Required: 18
 * The frontend application to build consumes an evolving API. Each group is given the same API that has five versions: an initial one and four others introducing four types of REST API evolution. The developer will then have to implement a working version of the frontend for each version of the API, with the two aforementioned approaches.
 * Each group will have to handle at least one evolution that is common with another group.
 * The end goal is to test all types of evolutions.
+
+## Artefacts
+
+* [Pre-experiment questionnaire](./pre-experiment-questionnaire.md)
+* [Post-experiment questionnaire](./post-experiment-questionnaire.md)
