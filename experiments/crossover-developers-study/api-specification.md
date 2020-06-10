@@ -10,6 +10,7 @@ The API is designed to enable the implementation of a variant of [TODO MVC](http
 GET /todos?status where Task = { title, status } and where the default value of status is "all" -> list the todos (title can be an empty string)
 POST /todo with body { title } -> create a new todo
 PUT /todo/{todoId} with body { title, status } -> modify a todo
+DELETE /todo/{todoId} -> delete a todo
 DELETE todos?status="active | completed | all" -> delete the todos with the given status
 ```
 

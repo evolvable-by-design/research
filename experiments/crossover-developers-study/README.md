@@ -1,6 +1,6 @@
 # Developers Experimentation
 
-> Crossover study, a variant of within-subject design inwhich all participants are exposed sequentially to all variances of the task
+> Crossover study, a variant of within-subject design in which all participants are exposed sequentially to all variances of the task
 
 Example article implementing this method: http://www.jot.fm/issues/issue_2019_02/article10.pdf
 
