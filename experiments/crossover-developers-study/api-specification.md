@@ -18,7 +18,7 @@ DELETE todos?status="active | completed | all" -> delete the todos with the give
 
 | Index | Type of evolution                                           | Actual Evolution on the API                                                                                               | Breaking clients? |
 | ----- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| 1     | Add or Remove Parameter                                     | Add a `due_date` parameter to PUT /todo/{todoId}                                                                          | Yes               |
+| 1     | Add or Remove Parameter                                     | Add a required `dueDate` body parameter of type date (not date-time) to POST /todo                                        | Yes               |
 | 2     | Change Type of Parameter                                    | Move the `due_date` parameter inside an object named `nested`                                                             | Yes               |
 | 3     | Change Type of Return Value                                 | Move `status` of Task inside a `details` object                                                                           | Yes               |
 | 4     | Delete Method                                               | Remove the DELETE method of the API                                                                                       | Yes               |
