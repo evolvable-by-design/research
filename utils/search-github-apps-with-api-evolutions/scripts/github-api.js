@@ -12,6 +12,8 @@ const {
   RateLimitHandler
 } = require('./utils')
 
+const CONFIG = require('../CONFIG.json')
+
 const GITHUB_AUTH_TOKEN = '6b32011b42d18b47823a863402157c894ddd39ad'
 const GITHUB_SEARCH_API_RATE_LIMIT = 30
 const GITHUB_SEARCH_API_RATE_LIMIT_RESET_DURATION = 60 // one minute in seconds
@@ -107,7 +109,7 @@ async function _searchGithubRepositories (apiName, pageSize, pageNumber) {
       {
         headers: {
           Accept: 'application/vnd.github+json',
-          Authorization: `token ${GITHUB_AUTH_TOKEN}`
+          Authorization: `token ${CONFIG['github-auth-token']}`
         }
       }
     )
