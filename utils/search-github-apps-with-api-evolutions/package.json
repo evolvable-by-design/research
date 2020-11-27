@@ -1,0 +1,16 @@
+{
+  "name": "@evolvable-by-design/apps-with-api-evolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data-gathering.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.19.2",
+    "md5": "^2.3.0",
+    "shelljs": "^0.8.4"
+  }
+}
