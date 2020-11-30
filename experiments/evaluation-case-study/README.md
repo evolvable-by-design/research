@@ -11,19 +11,19 @@ This benchmark is built to answer the following two research questions:
 
 This aims to investigate the applicability and feasibility of our approach. It also evaluates its robustness w.r.t. REST API evolutions, in particular breaking evolutions.
 
-**[RQ2] Does the implementation of an \textit{evolvable-by-design} Web UI require additional development effort?**
+**[RQ2] Does the implementation of an _evolvable-by-design_ Web UI require additional development effort?**
 
 This aims to investigate the trade-off of our approach in terms of development effort of user interfaces.
 
 ## Data set
 
-To evaluate the approach, we needed a web application composed of a Web UI and a REST API that implemented all sorts of evolutions from [the table listing the types API evolutions](/images/api-evolutions.png), at least once. Unfortunately, we could not find such kind of open-source project and our industrial partner could not provide one for privacy reasons.
+To evaluate the approach, we needed a web application composed of a Web UI and a REST API that implemented all sorts of evolutions from [the table listing the types API evolutions](./images/api-evolutions.png), at least once. Unfortunately, we could not find such kind of open-source project and our industrial partner could not provide one for privacy reasons.
 
-![api evolutions table](/images/api-evolutions.png)
+![api evolutions table](./images/api-evolutions.png)
 
 We developed a realistic web application imitating the project management software [Jira](https://www.atlassian.com/software/jira). With this application, multiple users collaborate on projects. A user can create public or private projects, invite other users to collaborate on the project, archive, delete or add tasks to it. The tasks have several operations and well-defined state transitions: they must be archived to be removable and only the tasks in a certain state can be completed, which can be customized by the users.
 
-![Screenshot of the application displaying the details of a task.](/images/app-screenshot.png)
+![Screenshot of the application displaying the details of a task.](./images/app-screenshot.png)
 
 Screenshot of the application displaying the details of a task.
 
@@ -53,9 +53,9 @@ All the code of the traditional UI is included. On the _evolvable-by-design_ UI,
 
 The next table summarizes the observed results of the evaluation, and more details are given in the following Table.
 
-![summary of the results of the evaluation](/images/overall-results.png)
+![summary of the results of the evaluation](./images/overall-results.png)
 
-![detailed results of the evaluation](/images/detailed-results.png)
+![detailed results of the evaluation](./images/detailed-results.png)
 
 **[RQ1] Can a UI autonomously adapt to all evolutions of a REST API that complies with the approach, without changing its code, at run-time?**
 
@@ -69,7 +69,7 @@ On the other hand, among the non-breaking evolutions, the only kind of evolution
 
 **[RQ2] Does the implementation of an evolvable-by-design Web UI require additional development efforts?**
 
-First, we observe in Table~\ref{table:evaluation-detailed-results} that the first implementation of the _evolvable-by-design_ UI required less code than the traditional version (1395 vs 1623). Yet, we argue that the development effort is similar. 
+First, we observe in Table IV that the first implementation of the _evolvable-by-design_ UI required less code than the traditional version (1395 vs 1623). Yet, we argue that the development effort is similar. 
 Indeed, the higher level of abstraction needed to implement the _evolvable-by-design_ version requires more cognitive effort than a copy of the contract into the code.
 
 Then, every evolution of the API required to update the traditional UI. On the other hand, on the _evolvable-by-design_ UI, the code had to be updated only for the two unsupported breaking evolutions. In the end, 7 lines of code were updated on the _evolvable-by-design_ UI and 230 on the traditional UI.
