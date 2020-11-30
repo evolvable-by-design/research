@@ -1,6 +1,6 @@
 # Research
 
-This repository centralises **all the research related to the evolvable-by-design topic** we started.
+This repository centralises **all our research related to the evolvable-by-design topic** we started.
 
 At the moment, it contains:
 
