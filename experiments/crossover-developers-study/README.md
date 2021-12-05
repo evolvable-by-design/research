@@ -1,4 +1,6 @@
-# Developers Experimentation
+# [WIP] Developers Experimentation
+
+**WARNING: this experiment has not been run yet, this is a work in progress**
 
 > Crossover study, a variant of within-subject design in which all participants are exposed sequentially to all variances of the task
 

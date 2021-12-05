@@ -1,0 +1,5 @@
+{
+  "data-path": "./data",
+  "max-repositories-fetched-per-api": 200,
+  "github-auth-token": "PUT_YOUR_TOKEN_HERE"
+}
